@@ -2,7 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Console\Commands\Teste;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Artisan;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,6 +16,8 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
+            PermissionSeeder::class,
+            UserSeeder::class,
             CitySeeder::class,
             CategorySeeder::class
         ]);
