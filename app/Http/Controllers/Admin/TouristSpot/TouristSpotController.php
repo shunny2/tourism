@@ -10,6 +10,7 @@ use App\Models\Image;
 use App\Models\TouristSpot;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Http;
 
 class TouristSpotController extends Controller
 {
@@ -30,7 +31,10 @@ class TouristSpotController extends Controller
      */
     public function create()
     {
+        $response = Http::get('https://servicodados.ibge.gov.br/api/v1/localidades/distritos')->json();
+        // dd($response);
         $cities = City::all();
+        // $cities = $response;
         $categories = Category::all();
 
         return view('admin.tourist_spot.form', compact('cities', 'categories'));
