@@ -91,6 +91,9 @@
                     @foreach ($cities as $citie)
                     <option value="{{$citie->id}}">{{$citie->name}}</option>
                     @endforeach
+                    {{-- @foreach ($cities as $citie)
+                    <option value="{{$citie['id']}}">{{$citie['nome']}}</option>
+                    @endforeach --}}
                 </select>
                 <label for="cities_id">Cidade:</label>
             </div>
