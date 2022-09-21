@@ -65,7 +65,7 @@ php artisan run:configs
 
 ## Status
 
-> Status: Finish.
+> Status: Not finished.
 
 <hr></hr>
 
