@@ -1,13 +1,72 @@
-## Sobre a Aplicação
+<p align="center">
+<a href="#about-application">About Application</a>
+&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#technologies">Technologies</a>
+&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#how-to-run">How to run</a>
+&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#status">Status</a>
+</p>
 
-    Aplicação para o cadastro e gerencimento de pontos turísticos.
+</br>
 
-## Execução
+![tourist-spots](https://user-images.githubusercontent.com/72872854/191530497-8d54969e-8571-4225-99eb-182a31207585.png)
 
-<ol>
-    <li>Copie o arquivo .env.example, crie um novo arquivo .env e coloque o arquivo copiado nele.</li>
-    <li>Construa o projeto e coloque os containers em execução com docker-compose up -d --build.</li>
-    <li>Entre dentro do container, e execute o comando 'composer install' para instalar todas as depêndencias do projeto.</li>
-    <li>Ainda dentro do container, execute as migrations e os seeders com os comandos 'php artisan migrate' e 'php artisan db:seed'.</li>
-    <li>Além disso, é necessário dar as permissões dos usuários e fazer o link para o storage onde será armazenado as images salvas. Para fazer isto, execute os comando 'php artisan create:permissions' e 'php artisan run:configs'.</li>
-</ol>
+## About Application
+
+Web application developed during the internship. The focus of the application is the registration and management of tourist spots.
+
+## Technologies
+
+- [PHP](https://www.php.net/)
+- [phpMyAdmin](https://www.phpmyadmin.net/)
+- [Laravel](https://laravel.com/)
+- [MySQL](https://www.mysql.com/)
+- [Docker](https://www.docker.com/)
+
+## How to Run
+
+First, start by cloning the repository:
+```shell
+git clone https://github.com/shunny2/turismo
+```
+Now copy the .env.example file, create a new .env file and place the copied file in it. 
+
+Run the command to create the image and get the container running:
+```bash
+docker-compose up -d --build
+```
+
+Run container interaction mode:
+```bash
+docker exec -it app-turismo bash
+```
+
+Install project dependencies with:
+```bash
+composer install
+```
+
+Still inside the container, run the migrations and seeders with the commands:
+```bash
+php artisan migrate
+```
+```bash
+php artisan db:seed
+```
+
+Finally, it is necessary to give the users permission and link to the storage where the saved images will be stored. To do this, run the commands:
+```bash
+php artisan create:permissions
+```
+```bash
+php artisan run:configs
+```
+
+## Status
+
+> Status: Finish.
+
+<hr></hr>
+
+<p align="center">Created by <a href="https://github.com/shunny2"><b>Alexander Davis</b></a>.</p>
