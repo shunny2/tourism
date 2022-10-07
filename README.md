@@ -5,7 +5,7 @@
 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#how-to-run">How to run</a>
 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#status">Status</a>
+<a href="#project-status">Project Status</a>
 </p>
 
 </br>
@@ -63,7 +63,7 @@ php artisan create:permissions
 php artisan run:configs
 ```
 
-## Status
+## Project Status
 
 > Status: Not finished.
 
