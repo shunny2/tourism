@@ -54,6 +54,12 @@ services:
         networks:
             - network
 
+    redis:
+        container_name: redis-turismo
+        image: redis:latest
+        networks:
+            - network
+
 networks:
     network:
         driver: bridge
