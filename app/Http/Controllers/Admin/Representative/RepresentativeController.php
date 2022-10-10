@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\RepresentativeRequest;
 use App\Models\City;
 use App\Models\Representative;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class RepresentativeController extends Controller
@@ -17,8 +18,7 @@ class RepresentativeController extends Controller
      */
     public function index()
     {
-        $cities = City::all();
-        return view('admin.representative.form', compact('cities'));
+        //
     }
 
     /**
@@ -28,7 +28,8 @@ class RepresentativeController extends Controller
      */
     public function create()
     {
-        //
+        $cities = City::all();
+        return view('admin.representative.form', compact('cities'));
     }
 
     /**
