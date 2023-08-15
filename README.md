@@ -52,9 +52,9 @@
 
 First, start by cloning the repository:
 ```shell
-git clone https://github.com/shunny2/turismo
+git clone https://github.com/shunny2/tourism
 ```
-Now copy the .env.example file, create a new .env file and place the copied file in it. 
+Now copy the .env.example file, create a new .env file, and place the copied file in it. 
 
 Run the command to create the image and get the container running:
 ```bash
@@ -63,7 +63,7 @@ docker-compose up -d --build
 
 Run container interaction mode:
 ```bash
-docker exec -it app-turismo bash
+docker exec -it app-tourism bash
 ```
 
 Install project dependencies with:
