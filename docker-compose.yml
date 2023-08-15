@@ -4,7 +4,7 @@ services:
         build:
             context: .
             dockerfile: ./Dockerfile
-        container_name: app-turismo
+        container_name: app-tourism
         restart: unless-stopped
         working_dir: /var/www/
         volumes:
@@ -14,7 +14,7 @@ services:
 
     mysql:
         image: mysql
-        container_name: db-turismo
+        container_name: db-tourism
         restart: always
         environment:
             MYSQL_ROOT_PASSWORD: '<root-password>'
@@ -55,7 +55,7 @@ services:
             - network
 
     redis:
-        container_name: redis-turismo
+        container_name: redis-tourism
         image: redis:latest
         networks:
             - network
