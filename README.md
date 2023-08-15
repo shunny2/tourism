@@ -15,14 +15,14 @@
 ![tourist-spots](https://user-images.githubusercontent.com/72872854/191530497-8d54969e-8571-4225-99eb-182a31207585.png)
 
 <p align="center">
-  <a href="https://img.shields.io/github/stars/shunny2/turismo?style=social"><img src="https://img.shields.io/github/stars/shunny2/turismo?style=social" alt="Repo Stars" /></a>
-  <a href="https://img.shields.io/github/forks/shunny2/turismo?style=social"><img src="https://img.shields.io/github/forks/shunny2/turismo?style=social" alt="Forks" /></a>
-  <a href="https://img.shields.io/github/license/shunny2/turismo"><img src="https://img.shields.io/github/license/shunny2/turismo" alt="License"/></a>
+  <a href="https://img.shields.io/github/stars/shunny2/tourism?style=social"><img src="https://img.shields.io/github/stars/shunny2/tourism?style=social" alt="Repo Stars" /></a>
+  <a href="https://img.shields.io/github/forks/shunny2/tourism?style=social"><img src="https://img.shields.io/github/forks/shunny2/tourism?style=social" alt="Forks" /></a>
+  <a href="https://img.shields.io/github/license/shunny2/tourism?style=social"><img src="https://img.shields.io/github/license/shunny2/tourism?style=social" alt="License"/></a>
 </p>
 
 ## About Application
 
-Web application developed during the internship. The focus of the application is the registration and management of tourist spots.
+<b>Tourism</b> is a Web application developed during the internship. The focus of the application is the registration and management of tourist spots.
 
 ## Technologies
 
@@ -79,7 +79,8 @@ php artisan migrate
 php artisan db:seed
 ```
 
-Finally, it is necessary to give the users permission and link to the storage where the saved images will be stored. To do this, run the commands:
+Finally, it is necessary to give the users permission and link to the storage where the saved images will be stored.\
+To do this, run the commands:
 ```bash
 php artisan create:permissions
 ```
